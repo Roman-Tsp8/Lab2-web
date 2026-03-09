@@ -7,42 +7,59 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container-wide">
+    <header class="header">
+      <div class="container container-wide">
         <div class="header-container">
           <nav class="header-nav">
-            <img class="header-logo" src="" alt="Логотип компанії" />
+            <a href="index.html">
+              <img
+                class="company-logo"
+                src="./company-logo.svg"
+                alt="Логотип компанії"
+              />
+            </a>
+
             <ul class="header-menu">
-              <li class="header-link"><a href="#">Головна</a></li>
-              <li class="header-link"><a href="#">Про нас</a></li>
-              <li class="header-link"><a href="#">Послуги</a></li>
-              <li class="header-link"><a href="#">Контакти</a></li>
+              <li><a class="header-link" href="#">Головна</a></li>
+              <li><a class="header-link" href="#">Про нас</a></li>
+              <li><a class="header-link" href="#">Послуги</a></li>
+              <li><a class="header-link" href="#">Контакти</a></li>
             </ul>
           </nav>
-          <button class="submit-button" type="button">Відправити заявку</button>
+          <button class="submit-button font-weight-500" type="button">
+            Відправити заявку
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="container-narrow">
-          <h1 lang="en">Build the Future with Codera</h1>
-          <p>
-            Ми допомагаємо компаніям створювати швидкі, сучасні та ефективні
-            цифрові продукти — від ідеї до повноцінного запуску.
-          </p>
-          <div class="hero-section-btn-container">
-            <button class="submit-button" type="button">
-              Відправити заявку
-            </button>
-            <button class="readmore-button" type="button">
-              Дізнатися більше
-            </button>
+        <div class="container container-narrow">
+          <div class="hero-section-container stack stack-lg">
+            <div class="section-header section-header-centered">
+              <h1 class="hero-section-title" lang="en">
+                Build the Future with <span class="accent">Techlabz</span>
+              </h1>
+              <p class="hero-section-text">
+                Ми допомагаємо компаніям створювати швидкі, сучасні та ефективні
+                цифрові продукти —
+                <span class="accent">від ідеї до повноцінного запуску.</span>
+              </p>
+            </div>
+
+            <div class="hero-section-btn-container stack stack-lg">
+              <button class="submit-button font-weight-500" type="button">
+                Відправити заявку
+              </button>
+              <button class="readmore-button font-weight-500" type="button">
+                Дізнатися більше
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <section class="advantages-section">
-        <div class="container-narrow">
+        <div class="container container-narrow">
           <ul class="advantages-section-list">
             <li class="advantages-section-item">Висока якість</li>
             <li class="advantages-section-item">Досвідчена команда</li>
@@ -51,16 +68,18 @@
           </ul>
         </div>
       </section>
-      <section class="about-us-section">
-        <div class="container-narrow">
-          <div class="about-us-section-container">
+      <section class="section about-us-section">
+        <div class="container container-narrow">
+          <div class="about-us-section-container stack stack-lg">
             <h2 class="about-us-section-title">Про нас</h2>
             <ul class="about-us-section-list">
               <li class="about-us-section-item">
                 <article class="about-us-section-card">
                   <!-- for icon -->
-                  <h3>Інноваційні технології</h3>
-                  <p>
+                  <h3 class="about-us-section-card-title">
+                    Інноваційні технології
+                  </h3>
+                  <p class="about-us-section-text">
                     Ми використовуємо сучасні інструменти та технології розробки
                     для створення швидких, надійних і масштабованих цифрових
                     продуктів.
@@ -69,18 +88,23 @@
               </li>
               <li class="about-us-section-item">
                 <article class="about-us-section-card">
-                  <h3>Професійна команда</h3>
-                  <p>
-                    Команда Codera складається з досвідчених розробників,
-                    дизайнерів і інженерів, які працюють разом для досягнення
-                    найкращого результату.
+                  <h3 class="about-us-section-card-title">
+                    Професійна команда
+                  </h3>
+                  <p class="about-us-section-text">
+                    Команда
+                    <span class="accent" lang="en">Techlabz </span> складається
+                    з досвідчених розробників, дизайнерів і інженерів, які
+                    працюють разом для досягнення найкращого результату.
                   </p>
                 </article>
               </li>
               <li class="about-us-section-item">
                 <article class="about-us-section-card">
-                  <h3>Індивідуальний підхід</h3>
-                  <p>
+                  <h3 class="about-us-section-card-title">
+                    Індивідуальний підхід
+                  </h3>
+                  <p class="about-us-section-text">
                     Ми аналізуємо потреби кожного клієнта та створюємо рішення,
                     які максимально відповідають бізнес-цілям і вимогам проекту.
                   </p>
@@ -90,15 +114,15 @@
           </div>
         </div>
       </section>
-      <section class="achievements-section">
-        <div class="container-narrow">
+      <section class="achievements-section section">
+        <div class="container container-narrow">
           <div class="achievements-section-container">
             <h2 class="achievements-section-title">Наші досягнення</h2>
             <ul class="achievements-section-list">
               <li class="achievements-section-item">
                 <article class="achievements-section-card">
                   <!-- for icon -->
-                  <h3 class="about-us-section-card-title">
+                  <h3 class="achievements-section-card-title">
                     10,000+ користувачів
                   </h3>
                   <p class="achievements-section-card-text">
@@ -109,7 +133,7 @@
               </li>
               <li class="achievements-section-item">
                 <article class="achievements-section-card">
-                  <h3 class="about-us-section-card-title">
+                  <h3 class="achievements-section-card-title">
                     150+ виконаних проєктів
                   </h3>
                   <p class="achievements-section-card-text">
@@ -120,7 +144,7 @@
               </li>
               <li class="achievements-section-item">
                 <article class="achievements-section-card">
-                  <h3 class="about-us-section-card-title">
+                  <h3 class="achievements-section-card-title">
                     100+ бізнес-клієнтів
                   </h3>
                   <p class="achievements-section-card-text">
@@ -131,7 +155,9 @@
               </li>
               <li class="achievements-section-item">
                 <article class="achievements-section-card">
-                  <h3 class="about-us-section-card-title">5 років досвіду</h3>
+                  <h3 class="achievements-section-card-title">
+                    5 років досвіду
+                  </h3>
                   <p class="achievements-section-card-text">
                     Наша команда має багаторічний досвід створення сучасних
                     технологічних рішень.
@@ -142,92 +168,135 @@
           </div>
         </div>
       </section>
-      <section class="services-section">
-        <div class="container-narrow">
+      <section class="services-section section">
+        <div class="container container-narrow">
           <div class="services-section-container">
-            <h2>Наші послуги</h2>
-            <p>
-              Ми надаємо повний спектр ІТ-послуг для створення сучасних цифрових
-              продуктів. Наша команда допомагає бізнесу розробляти ефективні
-              веб-рішення, оптимізувати процеси та впроваджувати інноваційні
-              технології.
-            </p>
+            <div
+              class="section-header section-header-centered section-header-lg stack"
+            >
+              <h2 class="services-section-title">Наші послуги</h2>
+              <p class="services-section-text">
+                Ми надаємо повний спектр ІТ-послуг для створення сучасних
+                цифрових продуктів. Наша команда допомагає бізнесу розробляти
+                ефективні веб-рішення, оптимізувати процеси та впроваджувати
+                інноваційні технології.
+              </p>
+            </div>
             <ul class="services-section-list">
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">Веб-розробка</h3>
-                  <p class="services-section-text">
-                    Створюємо сучасні, швидкі та адаптивні веб-сайти і
-                    веб-додатки, які забезпечують зручний користувацький досвід
-                    і високу продуктивність.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">Веб-розробка</h3>
+                    <p class="services-section-card-text">
+                      Створюємо сучасні, швидкі та адаптивні веб-сайти і
+                      веб-додатки, які забезпечують зручний користувацький
+                      досвід і високу продуктивність.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
               </li>
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">UI/UX дизайн</h3>
-                  <p class="services-section-card-text">
-                    Проєктуємо інтуїтивні та естетичні інтерфейси, що
-                    забезпечують зручну взаємодію користувача з цифровими
-                    продуктами.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">UI/UX дизайн</h3>
+                    <p class="services-section-card-text">
+                      Проєктуємо інтуїтивні та естетичні інтерфейси, що
+                      забезпечують зручну взаємодію користувача з цифровими
+                      продуктами.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
               </li>
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">
-                    Розробка програмного забезпечення
-                  </h3>
-                  <p class="services-section-card-text">
-                    Створюємо індивідуальні програмні рішення для автоматизації
-                    бізнес-процесів та підвищення ефективності роботи компаній.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">
+                      Розробка програмного забезпечення
+                    </h3>
+                    <p class="services-section-card-text">
+                      Створюємо індивідуальні програмні рішення для
+                      автоматизації бізнес-процесів та підвищення ефективності
+                      роботи компаній.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
               </li>
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">Мобільна розробка</h3>
-                  <p class="services-section-card-text">
-                    Розробляємо мобільні додатки для Android та iOS з сучасним
-                    дизайном, високою продуктивністю та стабільною роботою.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">
+                      Мобільна розробка
+                    </h3>
+                    <p class="services-section-card-text">
+                      Розробляємо мобільні додатки для Android та iOS з сучасним
+                      дизайном, високою продуктивністю та стабільною роботою.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
               </li>
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">Хмарні рішення</h3>
-                  <p class="services-section-card-text">
-                    Впроваджуємо сучасні хмарні технології для безпечного
-                    зберігання даних, масштабування сервісів та оптимізації
-                    інфраструктури.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">Хмарні рішення</h3>
+                    <p class="services-section-card-text">
+                      Впроваджуємо сучасні хмарні технології для безпечного
+                      зберігання даних, масштабування сервісів та оптимізації
+                      інфраструктури.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
               </li>
               <li class="services-section-item">
-                <article class="services-section-card">
-                  <h3 class="services-section-card-title">
-                    Технічна підтримка
-                  </h3>
-                  <p class="services-section-card-text">
-                    Забезпечуємо регулярне обслуговування, оновлення та
-                    підтримку програмних продуктів для їх стабільної роботи.
-                  </p>
-                  <button class="make-a-call-btn" type="button">
+                <article class="services-section-card stack stack-md">
+                  <div class="section-header section-header-sm">
+                    <h3 class="services-section-card-title">
+                      Технічна підтримка
+                    </h3>
+                    <p class="services-section-card-text">
+                      Забезпечуємо регулярне обслуговування, оновлення та
+                      підтримку програмних продуктів для їх стабільної роботи.
+                    </p>
+                  </div>
+
+                  <button
+                    class="make-a-call-button font-weight-500"
+                    type="button"
+                  >
                     Замовити зараз!
                   </button>
                 </article>
@@ -236,42 +305,61 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
-        <div class="container-narrow">
+      <section class="contact-section section">
+        <div class="container container-narrow">
           <div class="contacts-section-container">
-            <div class="contact-section-content">
-              <h2>Бажаєте замовити послугу?</h2>
-              <p>
+            <div
+              class="section-header section-header-centered section-header-lg stack stack-sm"
+            >
+              <h2 class="contact-section-title">
+                Бажаєте замовити <span class="accent">послугу?</span>
+              </h2>
+              <p class="contact-section-text">
                 Зв’яжіться з нашою командою, щоб обговорити ваш проєкт або
                 отримати консультацію. Ми завжди готові відповісти на ваші
                 запитання та допомогти знайти ефективне ІТ-рішення для вашого
                 бізнесу.
               </p>
-              <div class="contact-section-interactives">
-                <ul class="contact-section-list">
-                  <li class="contact-section-item">
-                    <!-- icon -->
-                    <a
-                      class="contact-section-link"
-                      href="mailto:codera@gmail.com"
-                      >codera@gmail.com</a
-                    >
-                  </li>
-                  <li class="contact-section-item">
-                    <!-- icon -->
-                    <a
-                      class="contact-section-link"
-                      href="https://www.google.com/maps/@50.4439377,30.5202675,21z?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
-                      >Україна, м. Київ вул. Хрещатик 44</a
-                    >
-                  </li>
-                  <li class="contact-section-item">
-                    <!-- icon -->
-                    <a class="contact-section-link" href="tel:+380558091376"
-                      >+38 (055) 809 13 76</a
-                    >
-                  </li>
-                </ul>
+            </div>
+            <div class="contact-section-interactives">
+              <div class="section-header">
+                <h3 class="contact-section-inner-title">
+                  Контактна інформація
+                </h3>
+                <p class="contact-section-inner-text">Зв’яжіться з нами!</p>
+              </div>
+              <ul class="contact-section-list">
+                <li class="contact-section-item">
+                  <!-- icon -->
+                  <a class="contact-section-link" href="mailto:codera@gmail.com"
+                    >codera@gmail.com</a
+                  >
+                </li>
+                <li class="contact-section-item">
+                  <!-- icon -->
+                  <a
+                    class="contact-section-link"
+                    href="https://www.google.com/maps/@50.4439377,30.5202675,21z?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
+                    >Україна, м. Київ вул. Хрещатик 44</a
+                  >
+                </li>
+                <li class="contact-section-item">
+                  <!-- icon -->
+                  <a class="contact-section-link" href="tel:+380558091376"
+                    >+38 (055) 809 13 76</a
+                  >
+                </li>
+              </ul>
+              <div class="social-media-container">
+                <a href="#">
+                  <!-- logo-1 -->
+                </a>
+                <a href="#">
+                  <!-- logo2 -->
+                </a>
+                <a href="#">
+                  <!-- logo3 -->
+                </a>
               </div>
             </div>
             <!-- form -->
@@ -279,63 +367,72 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container-wide">
+    <footer class="footer">
+      <div class="container container-wide">
+        <div class="footer-info">
+          <a href="#">
+            <img
+              class="company-logo"
+              src="./company-logo.svg"
+              alt="Логотип компанії"
+            />
+          </a>
+          <p class="footer-copyright">&copy; 2026 Дані захищено</p>
+        </div>
+
         <div class="footer-container">
-          <div class="">
-            <a href="">
-              <img class="footer-logo" src="./" alt="Логотип компанії" />
-            </a>
-            <div class="">
-              <a href="#">
-                <p>Політика конфіденційності</p>
-              </a>
-              <p>&copy; 2026 Дані захищено</p>
-            </div>
-            <div class="footer-navigation">
-              <h3>Навігація</h3>
+          <address class="footer-address">
+            <h4 class="footer-address-title font-weight-500">Знайдіть нас!</h4>
+            <ul class="footer-address-list">
+              <li>
+                <a class="footer-link" href="tel:+380558091376"
+                  >+380558091376</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="mailto:techlabz@gmail.com"
+                  >techlabz@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.google.com/maps/@50.4439377,30.5202675,21z?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
+                  >Україна, м. Київ вул. Хрещатик 44</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="footer-interactives">
+            <div class="footer-links">
+              <h4 class="footer-links-title">Про компанію</h4>
               <ul class="footer-nav-list">
-                <li class="footer-nav-link">Головна</li>
-                <li class="footer-nav-link">Про нас</li>
-                <li class="footer-nav-link">Послуги</li>
-                <li class="footer-nav-link">Контакти</li>
+                <li><a class="footer-link" href="#">Головна</a></li>
+                <li><a class="footer-link" href="#">Про нас</a></li>
+                <li><a class="footer-link" href="#">Послуги</a></li>
+                <li><a class="footer-link" href="#">Контакти</a></li>
               </ul>
             </div>
-            <address class="footer-address">
-              <div class="footer-contacts">
-                <div class="footer-contacts-fields">
-                  <ul class="footer-address-list">
-                    <li>
-                      <a
-                        class="footer-nav-link"
-                        class="footer-contact-item"
-                        href="tel:+380558091376"
-                      >
-                        +38 (055) 809 13 76
-                      </a>
-                    </li>
-                    <li>
-                      <a class="footer-nav-link" href="mailto:codera@gmail.com">
-                        codera@gmail.com
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="footer-nav-link"
-                        class=""
-                        href="https://www.google.com/maps/@50.4439377,30.5202675,21z?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
-                      >
-                        Україна, м. Київ вул. Хрещатик 44</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </address>
-            <div class="footer-form-container">
-              <h3>Залишайтесь з нами на зв'язку!</h3>
-              <!-- form -->
+            <div class="footer-legals">
+              <h4 class="footer-legals-title">Підписи</h4>
+              <ul class="footer-legals-list">
+                <li>
+                  <a class="footer-link" href="#">Політика конфіденційності</a>
+                </li>
+                <li><a class="footer-link" href="#">Умови користування</a></li>
+                <li>
+                  <a class="footer-link" href="#">Правила користування</a>
+                </li>
+                <li><a class="footer-link" href="#">Політика повернення</a></li>
+              </ul>
             </div>
+          </div>
+          <div class="footer-input-window">
+            <h4 class="footer-input-window-title">Слідкуйте за нами!</h4>
+            <p class="footer-input-window-text">
+              * Ми надсилатимемо вам тижневі оновленння для підвищення якості
+              продуктивності.
+            </p>
           </div>
         </div>
       </div>
