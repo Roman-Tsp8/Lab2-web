@@ -1,0 +1,53 @@
+@import "./utils/fonts";
+
+@import "./base";
+
+@import "./utils/variables";
+
+@import "./utils/utils";
+
+@import "./layout/containers";
+
+@import "./layout/section";
+
+@import "./utils/animations";
+
+/* buttons */
+
+@import "./components/buttons";
+
+/* header */
+
+@import "./components/header";
+
+/* hero-section */
+
+@import "./layout/hero-section";
+
+/* advantages-section */
+
+@import "./layout/advantages-section";
+
+/* about-us-section */
+
+@import "./layout/abous-us-section";
+
+@import "./components/abous-us-section-card";
+
+/* achievements-section */
+
+@import "./layout/achievements-section";
+
+/* services-section */
+
+@import "./layout/services-section";
+
+@import "./components/services-section-card";
+
+/* contact-section */
+
+@import "./layout/contact-section";
+
+/* footer */
+
+@import "./components/footer";
