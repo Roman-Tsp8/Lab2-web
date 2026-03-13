@@ -415,72 +415,78 @@
                     </svg>
                   </a>
                 </div>
+                <span class="circle-small"></span>
+                <span class="circle-big"></span>
               </div>
               <form class="contact-section-form stack" name="contact-form">
                 <div class="contact-section-register-info">
-                  <div class="contact-section-form-field">
+                  <div class="contact-section-form-field stack">
                     <label class="contact-section-label" for="user-name">
-                      First Name
-                      <input
-                        class="contact-section-input-control"
-                        id="user-name"
-                        name="user-name"
-                        type="text"
-                        minlength="3"
-                        maxlength="30"
-                        title="Name must contain only letters, numbers and underscores (3-30 characters)"
-                        pattern="^[a-zA-Z0-9]{3,30}$"
-                        placeholder="Enter your first name"
-                        required
-                      />
+                      Ваше ім'я
                     </label>
+                    <input
+                      class="contact-section-input-control"
+                      id="user-name"
+                      name="user-name"
+                      type="text"
+                      minlength="3"
+                      maxlength="30"
+                      title="Name must contain only letters, numbers and underscores (3-30 characters)"
+                      pattern="^[a-zA-Z0-9]{3,30}$"
+                      placeholder="Введіть ваше ім'я"
+                      autocomplete="off"
+                      required
+                    />
                   </div>
-                  <div class="form-field">
+                  <div class="contact-section-form-field stack">
                     <label class="contact-section-label" for="user-last-name">
-                      Last Name
-                      <input
-                        class="contact-section-input-control"
-                        id="user-last-name"
-                        name="user-last-name"
-                        type="text"
-                        minlength="3"
-                        maxlength="30"
-                        title="Last Name must contain only letters, numbers and underscores (3-30 characters)"
-                        pattern="^[a-zA-Z0-9]{3,30}$"
-                        placeholder="Enter your last name"
-                        required
-                      />
+                      Ваше прізвище
                     </label>
+                    <input
+                      class="contact-section-input-control"
+                      id="user-last-name"
+                      name="user-last-name"
+                      type="text"
+                      minlength="3"
+                      maxlength="30"
+                      title="Last Name must contain only letters, numbers and underscores (3-30 characters)"
+                      pattern="^[a-zA-Z0-9]{3,30}$"
+                      placeholder="Введіть ваше прізвище"
+                      autocomplete="off"
+                      required
+                    />
                   </div>
-                  <div class="form-field">
+                  <div class="contact-section-form-field stack">
                     <label class="contact-section-label" for="user-email">
                       Email
-                      <input
-                        class="contact-section-input-control"
-                        id="user-email"
-                        name="user-email"
-                        type="email"
-                        title="Enter a valid email address"
-                        pattern="^[^\s@]+@[^\s@]+\.[^s@]{2,}$"
-                        placeholder="Enter your email"
-                        required
-                      />
                     </label>
+                    <input
+                      class="contact-section-input-control"
+                      id="user-email"
+                      name="user-email"
+                      type="email"
+                      title="Enter a valid email address"
+                      pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                      placeholder="Введіть вашу електронну пошту"
+                      autocomplete="off"
+                      required
+                    />
                   </div>
-                  <div class="form-field">
+                  <div class="contact-section-form-field stack">
                     <label class="contact-section-label" for="user-phone">
-                      Phone Number
-                      <input
-                        class="contact-section-input-control"
-                        id="user-phone"
-                        name="user-phone"
-                        type="tel"
-                        title="Enter a valid telephone number"
-                        pattern="^\+380[\s-]?\d{2}[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$"
-                        placeholder="Enter your phone number"
-                        required
-                      />
+                      Номер телефону
                     </label>
+                    <input
+                      class="contact-section-input-control"
+                      id="user-phone"
+                      name="user-phone"
+                      type="tel"
+                      title="Enter a valid telephone number"
+                      pattern="^\+380[\s-]?\d{2}[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$"
+                      placeholder="Введіть ваш номер телефону"
+                      autocomplete="off"
+                      required
+                    />
                   </div>
                 </div>
                 <fieldset class="contact-section-selection">
@@ -489,15 +495,17 @@
                   </legend>
 
                   <ul class="contact-section-selection-list">
-                    <li>
+                    <li class="contact-section-selection-item">
                       <label class="contact-section-radio">
                         <input
                           class="contact-section-input-radio visually-hidden"
                           type="radio"
+                          name="request-type"
                         />
                         <span class="contact-section-radio-box">
                           <svg
                             class="contact-section-radio-icon"
+                            id="radio-icon"
                             width="13"
                             height="13"
                             viewBox="0 0 15 15"
@@ -514,15 +522,17 @@
                         >
                       </label>
                     </li>
-                    <li>
+                    <li class="contact-section-selection-item">
                       <label class="contact-section-radio">
                         <input
                           class="contact-section-input-radio visually-hidden"
                           type="radio"
+                          name="request-type"
                         />
                         <span class="contact-section-radio-box">
                           <svg
                             class="contact-section-radio-icon"
+                            id="radio-icon"
                             width="13"
                             height="13"
                             viewBox="0 0 15 15"
@@ -539,15 +549,17 @@
                         >
                       </label>
                     </li>
-                    <li>
+                    <li class="contact-section-selection-item">
                       <label class="contact-section-radio">
                         <input
                           class="contact-section-input-radio visually-hidden"
                           type="radio"
+                          name="request-type"
                         />
                         <span class="contact-section-radio-box">
                           <svg
                             class="contact-section-radio-icon"
+                            id="radio-icon"
                             width="13"
                             height="13"
                             viewBox="0 0 15 15"
@@ -564,11 +576,12 @@
                         >
                       </label>
                     </li>
-                    <li>
+                    <li class="contact-section-selection-item">
                       <label class="contact-section-radio">
                         <input
                           class="contact-section-input-radio visually-hidden"
                           type="radio"
+                          name="request-type"
                         />
                         <span class="contact-section-radio-box">
                           <svg
@@ -591,19 +604,22 @@
                     </li>
                   </ul>
                 </fieldset>
-                <div class="contact-section-textarea-container">
+                <div class="contact-section-textarea-container stack stack-sm">
                   <label class="contact-section-label" for="user-msg">
-                    Повідомлення
-                    <textarea
-                      class="contact-section-textarea"
-                      name="user-msg"
-                      id="user-msg"
-                      placeholder="Ваше повідомлення"
-                    >
-                    </textarea>
-                  </label>
+                    Повідомлення</label
+                  >
+
+                  <textarea
+                    class="contact-section-textarea"
+                    name="user-msg"
+                    id="user-msg"
+                    placeholder="Ваше повідомлення"
+                    minlength="10"
+                    maxlength="250"
+                  >
+                  </textarea>
                 </div>
-                <button class="send-message-button" type="button">
+                <button class="send-message-button submit-button" type="submit">
                   Надіслати повідомлення
                 </button>
               </form>
