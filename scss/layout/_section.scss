@@ -1,4 +1,10 @@
 .section {
   padding: 80px 0;
   background-color: var(--color-section-alternative);
+
+  &__title {
+    &--centered {
+      text-align: center;
+    }
+  }
 }

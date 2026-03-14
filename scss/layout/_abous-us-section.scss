@@ -1,16 +1,13 @@
-.about-us-section-container {
-  gap: 28px;
-}
+.about-us-section {
+  &__container {
+    gap: 28px;
+  }
 
-.about-us-section-title {
-  text-align: center;
-  font-size: 48px;
-}
-
-.about-us-section-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 30px 40px;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px 40px;
+  }
 }

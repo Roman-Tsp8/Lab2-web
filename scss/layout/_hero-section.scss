@@ -1,32 +1,21 @@
 .hero-section {
   position: relative;
   padding: 272px 0;
-}
 
-.hero-section-container {
-  justify-content: center;
-}
+  &__container {
+    justify-content: center;
+  }
 
-.hero-section-title {
-  font-size: 102px;
-  font-weight: 600;
-  white-space: nowrap;
-  line-height: 1.4;
-}
+  &__title {
+    font-size: 102px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.4;
+  }
 
-.hero-section-title .accent {
-  color: var(--color-brand-default);
-}
-
-.hero-section-text {
-  font-size: 20px;
-}
-.hero-section-text .accent {
-  color: var(--color-brand-default);
-}
-
-.hero-section-btn-container {
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+  &__btn-container {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }

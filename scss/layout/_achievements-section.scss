@@ -1,37 +1,27 @@
-.achievements-section-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 80px;
-}
+.achievements-section {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+  }
 
-.achievements-section-title {
-  font-size: 48px;
-}
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 30px 40px;
+  }
 
-.achievements-section-title .accent {
-  color: var(--color-brand-default);
-}
+  &__card-title {
+    line-height: 1.3;
+    text-align: center;
+    max-width: 320px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
 
-.achievements-section-list {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 30px 40px;
-}
-
-.achievements-section-card-title {
-  line-height: 1.3;
-  text-align: center;
-  max-width: 320px;
-  margin-bottom: 10px;
-  white-space: nowrap;
-}
-
-.achievements-section-card-title .accent {
-  color: var(--color-brand-default);
-}
-
-.achievements-section-card-text {
-  max-width: 400px;
-  line-height: 1.2;
+  &__card-text {
+    max-width: 400px;
+    line-height: 1.2;
+  }
 }

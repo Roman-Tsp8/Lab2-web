@@ -12,6 +12,8 @@
 
 @import "./utils/animations";
 
+@import "./components/social-media-container";
+
 /* buttons */
 
 @import "./components/buttons";
@@ -46,7 +48,7 @@
 
 /* contact-section */
 
-@import "./layout/contact-section";
+@import "./components/contact-section";
 
 /* footer */
 

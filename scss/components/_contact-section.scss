@@ -1,0 +1,158 @@
+.contact-section {
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__title {
+    line-height: 1.4;
+  }
+
+  &__info {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #020617;
+    border-radius: 6px;
+    flex-basis: 40%;
+  }
+
+  &__inner-title {
+    margin-bottom: 8px;
+    font-size: 28px;
+  }
+
+  &__inner-text {
+    font-size: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    flex-grow: 2;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__interactives {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__form {
+    padding: 40px 50px;
+    gap: 45px;
+  }
+
+  &__register-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 45px;
+  }
+
+  &__label {
+    color: var(--color-brand-border);
+  }
+
+  &__form-field {
+    gap: 12px;
+    position: relative;
+    &:focus-within .contact-section__label {
+      color: var(--color-brand-text);
+    }
+    &::after {
+      content: "";
+      border: 1px solid var(--color-brand-border);
+      width: 100%;
+    }
+    &:focus-within::after {
+      border: 1px solid var(--color-brand-text);
+    }
+  }
+
+  &__input-control {
+    width: 278px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: var(--color-brand-text);
+  }
+
+  &__selection-title {
+    margin-bottom: 14px;
+  }
+
+  &__selection-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__selection-item {
+    flex-grow: 1;
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__radio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-secondary-dark);
+    border-radius: 50%;
+  }
+
+  &__radio-icon {
+    display: block;
+    opacity: 0;
+  }
+
+  &__input-radio:checked + &__radio-box &__radio-icon {
+    opacity: 1;
+  }
+  &__input-radio:checked + &__radio-box {
+    background-color: var(--color-brand-default);
+  }
+
+  &__textarea {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color-brand-text);
+  }
+
+  &__textarea-container {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid var(--color-brand-light);
+    }
+    &:focus-within {
+      border: none;
+    }
+  }
+}

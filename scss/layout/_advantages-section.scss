@@ -1,16 +1,12 @@
 .advantages-section {
   padding: 16px 0;
-}
 
-.advantages-section-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 54px;
-  background-color: transparent;
-}
-
-.advantages-section-item {
-  font-size: 20px;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 54px;
+    background-color: transparent;
+  }
 }

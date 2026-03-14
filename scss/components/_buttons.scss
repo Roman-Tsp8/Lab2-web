@@ -9,8 +9,10 @@
   transition: background-color 0.4s;
 }
 
-.submit-button:hover {
-  background-color: var(--color-brand-hover);
+.submit-button {
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
 }
 
 .readmore-button {
@@ -19,11 +21,11 @@
   transition:
     color 0.4s,
     background-color 0.4s;
-}
 
-.readmore-button:hover {
-  background-color: var(--color-secondary-text);
-  color: var(--color-brand-light);
+  &:hover {
+    background-color: var(--color-secondary-text);
+    color: var(--color-brand-light);
+  }
 }
 
 .make-a-call-button {
@@ -38,10 +40,13 @@
   color: var(--color-brand-text);
   border-radius: 10px;
   transition: background-color 0.4s;
-}
 
-.make-a-call-button:hover {
-  background-color: var(--color-brand-hover);
+  &:hover {
+    background-color: var(--color-brand-hover);
+    .arrow-wrapper {
+      transform: translateX(10px);
+    }
+  }
 }
 
 .send-message-button {
@@ -55,8 +60,4 @@
 .btn-arrow {
   transform: rotate(180deg);
   color: var(--color-brand-highlight);
-}
-
-.make-a-call-button:hover .arrow-wrapper {
-  transform: translateX(10px);
 }
