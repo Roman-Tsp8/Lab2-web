@@ -55,6 +55,7 @@
 
 .company-logo {
   width: 185px;
+  height: auto;
 }
 
 .emoji {
@@ -92,4 +93,20 @@
 
 .text-center {
   text-align: center;
+}
+
+.mrg-center {
+  margin: 0 auto;
+}
+
+.card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 0.7) 72%,
+    #020617 100%
+  );
+  z-index: 1;
 }

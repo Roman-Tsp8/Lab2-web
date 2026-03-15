@@ -68,9 +68,29 @@
     }
   }
 
+  &__input-window {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+  }
+
   &__input-window-title {
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__input-control {
+    padding: 12px 10px;
+    border-radius: 4px 0 0 4px;
+    background: rgba(255, 255, 255, 0.09);
+    border: none;
+    color: var(--color-brand-text);
   }
 
   &__input-window-text {

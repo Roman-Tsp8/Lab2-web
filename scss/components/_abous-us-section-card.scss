@@ -10,6 +10,13 @@
   width: 380px;
   border-radius: 16px;
   background: #020617;
+  z-index: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
@@ -57,14 +64,40 @@
   }
 
   &__title {
+    position: relative;
+    z-index: 2;
     text-align: center;
     margin-bottom: 8px;
     font-size: 25px;
   }
 
   &__text {
+    position: relative;
+    z-index: 2;
     max-width: 251px;
     text-align: center;
     min-height: 74px;
   }
+}
+
+.about-us-section-card-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.about-us-section-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.about-us-section-card:hover .about-us-section-card-image {
+  transform: scale(1.05);
 }

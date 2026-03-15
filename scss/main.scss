@@ -24,11 +24,11 @@
 
 /* hero-section */
 
-@import "./layout/hero-section";
+@import "./components/hero-section";
 
 /* advantages-section */
 
-@import "./layout/advantages-section";
+@import "./components/advantages-section";
 
 /* about-us-section */
 
@@ -42,7 +42,7 @@
 
 /* services-section */
 
-@import "./layout/services-section";
+@import "./components/services-section";
 
 @import "./components/services-section-card";
 
@@ -53,3 +53,12 @@
 /* footer */
 
 @import "./components/footer";
+
+//  about
+
+@import "./layout/history-section";
+
+@import "./components/team-section-cards";
+
+@import "./layout/benefits-section";
+@import "./components/benefits-section-cards";

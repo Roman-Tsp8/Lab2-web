@@ -1,6 +1,18 @@
 .hero-section {
   position: relative;
   padding: 272px 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at center bottom,
+    rgba(139, 92, 246, 0.6) 0%,
+    rgba(15, 23, 42, 0.9) 70%,
+    var(--color-brand-dark) 100%
+  );
 
   &__container {
     justify-content: center;

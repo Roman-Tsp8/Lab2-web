@@ -49,6 +49,24 @@
   }
 }
 
+.button-subscribe {
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background-color: #020617;
+  color: var(--color-brand-text);
+  font-size: 12px;
+  transition: background-color 0.35s ease;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: var(--color-brand-dark);
+  }
+}
+
 .send-message-button {
   align-self: flex-end;
 }

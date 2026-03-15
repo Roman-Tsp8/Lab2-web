@@ -3,17 +3,28 @@
   overflow: hidden;
   padding: 32px;
   width: 100%;
+  height: 500px;
   min-height: 220px;
   border-radius: 16px;
   border: 1px solid var(--color-brand-highlight);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
 
   &__title {
+    position: relative;
+    z-index: 2;
     line-height: 1.3;
     margin-bottom: 12px;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
   }
 
   &::before {
@@ -55,4 +66,23 @@
   &:hover::after {
     opacity: 0.08;
   }
+}
+
+.services-section-card-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.services-section-card-image {
+  transition: transform 0.35s ease;
+}
+
+.services-section-card:hover .services-section-card-image {
+  transform: scale(1.02);
 }
